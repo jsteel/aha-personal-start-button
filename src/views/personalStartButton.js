@@ -15,21 +15,13 @@ const Styles = () => {
 
 aha.on("personalStartButton", ({ record, fields, onUnmounted }, { identifier, settings }) => {
   const handleStart = async () => {
-    console.log('personalStartButton: Go', record);
-
-    // Move these to personal settings
-    const teamName = 'A Team';
-    const projectId = aha.project.id
-
     // This logic could be improved to select a more appropriate release within the given projectId
-    const releases = await aha.models.Release.select('id', 'name').where({ projectId: projectId }).all();
+    const releases = await aha.models.Release.select('id', 'name').where({ projectId: settings.projectId }).all();
     const release = releases[0];
-
-    console.log('personalStartButton: Assigning to release:', release.id);
 
     record.assignedToUser = aha.user;
     record.workflowStatus = { name: 'In development' };
-    record.team = { name: teamName };
+    record.team = { name: settings.teamName };
     record.teamWorkflowStatus = { name: 'In progress' };
     record.release = { id: release.id };
     record.save();

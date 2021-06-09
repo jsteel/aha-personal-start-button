@@ -24,6 +24,24 @@
             "Epic"
           ]
         }
+      },
+      "settings": {
+        "teamName": {
+          "title": "Team name",
+          "type": "string",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "The team to assign to"
+        },
+        "projectId": {
+          "title": "Project id",
+          "type": "string",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "The project id (e.g., DEMO) on which to find the release to assign"
+        }
       }
     }
   }
