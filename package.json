@@ -1,0 +1,30 @@
+{
+  "name": "aha.personal-start-button",
+  "description": "personal-start-button",
+  "version": "0.0.0",
+  "author": "jsteel",
+  "repository": {
+    "type": "git",
+    "url": "TODO: Add the GitHub URL to your extension in package.json"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "aha-cli": "1.9.6"
+  },
+  "ahaExtension": {
+    "contributes": {
+      "views": {
+        "personalStartButton": {
+          "title": "Easy flow",
+          "entryPoint": "src/views/personalStartButton.js",
+          "host": "attribute",
+          "recordTypes": [
+            "Feature",
+            "Requirement",
+            "Epic"
+          ]
+        }
+      }
+    }
+  }
+}
