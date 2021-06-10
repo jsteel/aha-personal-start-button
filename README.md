@@ -1,24 +1,10 @@
 # personal-start-button
-  
-TODO: Supply a short overview of the functionality the extension brings to Aha! Develop
-This [Aha! Develop](https://www.aha.io/develop/overview) extension enables...
 
-It provides these contributions:
-
-TODO: Add a contribution list here. These should briefly describe each of the features provided by this extension.
+This [Aha! Develop](https://www.aha.io/develop/overview) extension adds buttons for making workflow transitions easier to manage when you have both Aha! develop and roadmaps enabled.
 
 ## Demo
 
-TODO: Add a short .gif screen recording showing some of the highlights of your extension. This can be recorded using a tool like [LICECap](https://www.cockos.com/licecap/).
-
-![demo](demo.gif)
-
-## Installing the extension
-
-**Note: In order to install an extension into your Aha! Develop account, you must be an account administrator.**
-
-TODO: Fill in a link to your built extension package
-Install the personal-start-button extension by clicking [here](https://secure.aha.io/settings/account/extensions/install?url=).
+![demo](personal-start.gif)
 
 ## Working on the extension
 
@@ -30,9 +16,8 @@ npm install -g aha-cli
 
 Clone the repo:
 
-TODO: Add the repository URL here
 ```sh
-git clone ...
+git clone https://github.com/jsteel/aha-personal-start-button
 ```
 
 **Note: In order to install an extension into your Aha! Develop account, you must be an account administrator.**

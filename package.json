@@ -33,6 +33,76 @@
             "user", "account"
           ],
           "description": "The team to assign to"
+        },
+        "setRelease": {
+          "title": "Skip release",
+          "type": "boolean",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "Set to yes to skip setting the release"
+        },
+        "projectId": {
+          "title": "Project Id",
+          "type": "string",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "Project id or reference number"
+        },
+        "startWorkflowStatus": {
+          "title": "Workflow status start",
+          "type": "string",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "Name of the workflow status to set on start",
+          "default": "In development"
+        },
+        "endWorkflowStatus": {
+          "title": "Workflow status end",
+          "type": "string",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "Name of the workflow status to set on end",
+          "default": "Ready to ship"
+        },
+        "startTeamWorkflowStatus": {
+          "title": "Team workflow status start",
+          "type": "string",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "Name of the team workflow status to set on start",
+          "default": "In progress"
+        },
+        "endTeamWorkflowStatus": {
+          "title": "Team workflow status end",
+          "type": "string",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "Name of the team workflow status to set on end",
+          "default": "Done"
+        },
+        "reviewWorkflowStatus": {
+          "title": "Workflow status in review",
+          "type": "string",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "Name of the workflow status to set on for review",
+          "default": "In code review"
+        },
+        "reviewTeamWorkflowStatus": {
+          "title": "Team workflow status in review",
+          "type": "string",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "Name of the team workflow status to set for review",
+          "default": "In code review"
         }
       }
     }
