@@ -24,6 +24,16 @@
             "Epic"
           ]
         }
+      },
+      "settings": {
+        "teamName": {
+          "title": "Team name",
+          "type": "string",
+          "scope": [
+            "user", "account"
+          ],
+          "description": "The team to assign to"
+        }
       }
     }
   }
